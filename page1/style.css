@@ -16,7 +16,7 @@ body {
     width: 50%;  
     height: 700px; 
     border: 3px solid #2E282A; 
-    overflow-y: auto; /* Allow scrolling if content overflows */
+    white-space: pre-wrap;
     background-color:#B2945B; 
     font-family: monospace;
     font-size: 16px;
@@ -24,6 +24,7 @@ body {
     box-sizing: border-box; /* Include padding and border in the width and height */
     resize: none; /* Disable resizing for textarea */
     border-radius: 15px;
+    overflow-wrap: break-word;
 }
 
 #saveButton {
@@ -88,4 +89,11 @@ img
     word-wrap: break-word;
     overflow-wrap: break-word;
     overflow-y: auto;
+}
+.themes{
+    font-family: monospace;
+    background-color: #B2945B;
+    border: 3px solid#2E282A;
+    border-radius: 10px;
+    font-size:20px;
 }
